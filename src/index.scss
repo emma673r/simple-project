@@ -1,0 +1,33 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.App {
+  display: grid;
+  grid-template-columns: auto 200px;
+}
+.Header {
+  background-color: royalblue;
+  grid-column: 1/-1;
+}
+.ProductList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.Product {
+  h2 {
+    height: 30px;
+    overflow: hidden;
+  }
+}
