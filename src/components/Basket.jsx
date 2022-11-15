@@ -15,6 +15,7 @@ function Basket(props) {
         {props.cart.map((item) => (
           <li>
             {item.productdisplayname} x {item.amount}, {item.amount * item.price},-
+            <button onClick={() => props.removeFromCart(item.id)}>X</button>
           </li>
         ))}
       </ul>
